@@ -3,6 +3,7 @@ import AppComponent from "../../components/app";
 import HeaderComponent from "../../components/header";
 import PageComponent from "../../components/page";
 import RestaurantComponent from "../../components/restaurant";
+import LocationComponent from "../../components/location";
 
 import { USER_DATA_URL, RESTAURANTS_DATA_URL } from "../../config";
 
@@ -51,7 +52,8 @@ function App() {
 
   return (
     <AppComponent>
-      <HeaderComponent currentLocation={currentLocation} userName={userName} />
+      <HeaderComponent userName={userName} />
+      <LocationComponent currentLocation={currentLocation} />
       <PageComponent
         restaurantsAmount={restaurantsAmount}
         restaurants={getRestaurants()}

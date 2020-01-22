@@ -1,15 +1,13 @@
 @import "../styles/variables";
 
 .header {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
 
   &__top-part {
     display: flex;
     justify-content: space-between;
-    padding: 10px $global-padding;
+    padding: 10px 0;
   }
   &__logo {
     background-image: url("/resources/svgs/logo-horizontal.svg");
@@ -40,34 +38,6 @@
   }
 }
 
-.location {
-  background-color: #21CBBB;
-  display: flex;
-  justify-content: space-between;
-  padding: 30px $global-padding;
-
-  &__info {
-    &-title {
-      color: #0B635C;
-      font-size: 12px;
-    }
-    &-current {
-      color: #fff;
-      font-size: 22px;
-      font-weight: 600;
-    }
-  }
-  &__button-change {
-    background-color: #fff;
-    border-radius: 5px;
-    border: none;
-    color: #18A296;
-    cursor: pointer;
-    outline: none;
-    padding: 10px 20px;
-  }
-}
-
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 568px)
@@ -77,14 +47,5 @@ and (orientation : portrait) {
   }
   .header__user-name {
     display: none;
-  }
-
-  .location {
-    flex-direction: column;
-    padding: 20px $global-padding;
-
-    &__info {
-      padding-bottom: 15px;
-    }
   }
 }

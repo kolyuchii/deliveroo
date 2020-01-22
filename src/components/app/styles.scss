@@ -1,3 +1,5 @@
+@import "../styles/variables.scss";
+
 * {
   margin: 0;
   padding: 0;
@@ -15,8 +17,8 @@
 
 .app {
   display: grid;
-  grid-template-columns: 5% auto 5%;
-  grid-template-rows: 45px auto auto;
+  grid-template-columns: minmax(5%, auto) minmax(0, $max-width) minmax(5%, auto);
+  grid-template-rows: 45px auto auto auto;
   justify-items: stretch;
   font-family: 'IBMPlexSans', plex-sans, sans-serif;
   font-weight: 400;

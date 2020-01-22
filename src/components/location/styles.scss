@@ -1,0 +1,47 @@
+@import "../styles/variables.scss";
+
+.location {
+  background-color: #21cbbb;
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-template-columns: minmax(5%, auto) minmax(0, $max-width) minmax(5%, auto);
+
+  &__container {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+  }
+  &__info {
+    &-title {
+      color: #0b635c;
+      font-size: 12px;
+    }
+    &-current {
+      color: #fff;
+      font-size: 22px;
+      font-weight: 600;
+    }
+  }
+  &__button-change {
+    background-color: #fff;
+    border-radius: 5px;
+    border: none;
+    color: #18a296;
+    cursor: pointer;
+    outline: none;
+    padding: 10px 20px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  .location__container {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  .location__info {
+    padding-bottom: 15px;
+  }
+}
