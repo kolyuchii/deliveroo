@@ -1,0 +1,41 @@
+.empty {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+
+  text-align: center;
+
+  background-image: url("/plate-empty.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 100px;
+  margin-top: 50px;
+  padding-top: 120px;
+
+  &__title {
+    color: #2e3333;
+    font-family: plex-sans,sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+  }
+  &__description {
+    font-size: 14px;
+    line-height: 19px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #828585;
+  }
+  &__button {
+    color: #fff;
+    background: #00ccbc;
+    min-height: 40px;
+    padding: 8px 16px;
+    cursor: pointer;
+    line-height: 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    font-weight: 600;
+    border: none;
+  }
+}

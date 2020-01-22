@@ -15,13 +15,14 @@
     background-image: url("/resources/svgs/logo-horizontal.svg");
     background-repeat: no-repeat;
     background-size: 100px;
+    overflow: hidden;
     width: 100px;
     height: 26px;
     display: block;
+    text-indent: -99999px;
   }
   &__user {
     min-width: 15px;
-    height: 18px;
     background-image: url("/resources/svgs/user-icon.svg");
     background-repeat: no-repeat;
     background-position: 0 50%;
@@ -44,7 +45,6 @@
   display: flex;
   justify-content: space-between;
   padding: 30px $global-padding;
-  justify-self: stretch;
 
   &__info {
     &-title {
@@ -64,7 +64,7 @@
     color: #18A296;
     cursor: pointer;
     outline: none;
-    padding: 0 20px;
+    padding: 10px 20px;
   }
 }
 
@@ -77,5 +77,14 @@ and (orientation : portrait) {
   }
   .header__user-name {
     display: none;
+  }
+
+  .location {
+    flex-direction: column;
+    padding: 20px $global-padding;
+
+    &__info {
+      padding-bottom: 15px;
+    }
   }
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import './styles.scss';
+import PropTypes from 'prop-types';
 
 const AppComponent = props => {
     return (
@@ -7,6 +8,13 @@ const AppComponent = props => {
             {props.children}
         </div>
     );
+};
+
+AppComponent.propTypes = {
+    children: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.node),
+        PropTypes.node
+    ]).isRequired
 };
 
 export default AppComponent;
