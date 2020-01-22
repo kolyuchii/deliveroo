@@ -1,0 +1,26 @@
+.restaurant {
+  align-self: stretch;
+  justify-self: stretch;
+
+  &__link {
+    text-decoration: none;
+  }
+    &__img {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  &__info {
+
+    &-name {
+      color: #000;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 2px;
+    }
+
+    &-tags {
+      color: #929595;
+      font-size: 11px;
+    }
+  }
+}

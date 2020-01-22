@@ -1,0 +1,81 @@
+@import "../styles/variables";
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  &__top-part {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px $global-padding;
+  }
+  &__logo {
+    background-image: url("/resources/svgs/logo-horizontal.svg");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    width: 100px;
+    height: 26px;
+    display: block;
+  }
+  &__user {
+    min-width: 15px;
+    height: 18px;
+    background-image: url("/resources/svgs/user-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__user-name {
+    padding-left: 20px;
+    line-height: 15px;
+    font-size: 12px;
+    color: #000;
+  }
+}
+
+.location {
+  background-color: #21CBBB;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px $global-padding;
+  justify-self: stretch;
+
+  &__info {
+    &-title {
+      color: #0B635C;
+      font-size: 12px;
+    }
+    &-current {
+      color: #fff;
+      font-size: 22px;
+      font-weight: 600;
+    }
+  }
+  &__button-change {
+    background-color: #fff;
+    border-radius: 5px;
+    border: none;
+    color: #18A296;
+    cursor: pointer;
+    outline: none;
+    padding: 0 20px;
+  }
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+  .header__logo {
+    width: 25px;
+  }
+  .header__user-name {
+    display: none;
+  }
+}

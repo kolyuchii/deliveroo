@@ -1,0 +1,26 @@
+@import "../styles/variables";
+
+.restaurants {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: row3-start;
+  margin-bottom: 50px;
+  &__amount {
+    padding: 30px $global-padding;
+    color: #828686;
+    font-size: 12px;
+  }
+  &__items {
+    padding: 0 $global-padding;
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 22px;
+
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: row4-start;
+    grid-row-end: row4-end;
+  }
+}

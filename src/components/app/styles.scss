@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('/resources/fonts/IBMPlexSans-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('/resources/fonts/IBMPlexSans-Bold.woff2') format('woff2');
+  font-weight: bold;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 5% auto 5%;
+  grid-template-rows: 30px 65px 50px auto;
+  justify-items: stretch;
+  font-family: 'IBMPlexSans', plex-sans, sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
