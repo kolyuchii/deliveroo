@@ -32,7 +32,7 @@ const PageComponent = props => {
 };
 
 PageComponent.propTypes = {
-  restaurants: PropTypes.array.isRequired,
+  restaurants: PropTypes.array,
   restaurantsAmount: PropTypes.number,
   isLoading: PropTypes.bool
 };
